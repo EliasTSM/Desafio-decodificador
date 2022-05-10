@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Decodificador</title>    
+        <link href="reset.css" rel="stylesheet">
+        <link href="principal.css" rel="stylesheet">
+    </head>
+    <body>
+        <main>
+            <div class="parte-esquerda">
+                <div class="cabecalho">
+                    <img src="img/alura.png" alt="alura" class="alura">
+                    <h1 class="titulo">Decodificador</h1>
+                </div>
+                <form id="form">
+                    <textarea name="codificacao" id="placeholder" cols="30" rows="10" class="codificador" placeholder="Digite seu texto"></textarea>
+                    <div class="info">
+                        <img src="img/Vector.png" alt="notificação" class="notificacao">
+                        <p class="aviso">Apenas letras minúsculas e sem acento</p>
+                    </div>
+                    <div class="botoes">
+                        <button type="submit" class="botao-c">Criptografar</button>
+                        <button type="submit" class="botao-d">Descriptografar</button>
+                    </div>
+                </form>
+            </div>
+            <div class="parte-direita">
+                <ul class="resultado">
+                    <li>
+                        <div id="sem-texto">
+                            <img src="img/High quality products 1 1.png" alt="boneco" class="imagem-resultado">
+                            <p id="um" class="mensagens">Nenhuma mensagem encontrada</p>
+                            <p id="dois" class="mensagens">Digite um texto que você deseja criptografar ou descriptografar.</p> 
+                        </div>
+                        <div id="esconder" >
+                            <p id="com-texto"></p>
+                            <div id="ajuste-copia" >
+                                <button type="submit" class="botao-copia" id="copia" onclick="copiar()">Copiar</button>
+                            </div>
+                        </div>
+                    </li>
+                </ul>                
+            </div>
+        </main>
+        <footer>
+            <p class="copyright">&copy; Desenvolvido por Elias Miranda - 2022</p>
+        </footer>
+        <script src="decodificador.js"></script>
+    </body>
+</html>
